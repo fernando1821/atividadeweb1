@@ -3,9 +3,209 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>programacao web atividade 1</title>
 </head>
 <body>
-    
+    <h1>Assistente Virtual Inteligente para Instituições 
+Educacionais: Aplicação da Técnica RAG no IFBot </h1>
+<h2>Wesley Folly Volotão de Souza1, Ianne Lima Nogueira1, Anderson Veiga de Souza1</h2>
+<abbr>wesley.souza@iff.edu.br, ianne.nogueira@iff.edu.br, 
+anderson.silva@iff.edu.br</abbr>
+<blockquote><i><b>Abstract.</b> This paper presents the IFBot, an artificial intelligence chatbot 
+developed to optimize access to institutional information in an educational 
+institution. The solution uses the RAG (Retrieval-Augmented Generation) 
+approach, combining web scraping and analysis of public documents to 
+provide automated and reliable responses. As a preliminary result, the tool is 
+expected to reduce face-to-face service demands, with planned evaluations to 
+measure response accuracy and user satisfaction. Additionally, social and 
+cultural impacts, such as digital inclusion and ethical data handling, are 
+discussed. <br><br>
+<b>Resumo.</b> Este trabalho apresenta o IFBot, um chatbot de inteligência 
+artificial desenvolvido para otimizar o acesso a informações institucionais em 
+uma instituição de ensino. A solução utiliza a abordagem RAG (Retrieval
+Augmented Generation), combinando web <i>scraping</i> e análise de documentos 
+públicos para fornecer respostas automatizadas e confiáveis. Como resultado 
+preliminar, espera-se que a ferramenta reduza demandas presenciais, com 
+testes previstos para avaliar a taxa de resposta correta e o grau de satisfação 
+dos usuários. Além disso, são discutidos impactos sociais e culturais, como 
+inclusão digital e tratamento ético de dados sensíveis.</i></blockquote>
+<h3>1. Introdução </h3>
+<p>O avanço da inteligência artificial (IA) tem proporcionado novas soluções para otimizar 
+o acesso à informação e aprimorar processos administrativos em diversas instituições. 
+No contexto educacional, a aplicação de IA vem sendo explorada para melhorar a 
+eficiência no atendimento a alunos e servidores, automatizando tarefas repetitivas e 
+reduzindo a carga administrativa (McAfee & Brynjolfsson, 2017). A agilidade e 
+precisão na obtenção de informações são fundamentais para o bom funcionamento da 
+comunidade acadêmica, garantindo que os usuários tenham acesso rápido a dados 
+institucionais relevantes. Nesse contexto, a inteligência artificial tem se mostrado uma 
+ferramenta poderosa, pois, como destacam Chen, Chen e Lin (2020), as tecnologias de 
+IA têm sido amplamente adotadas em instituições educacionais para automatizar tarefas 
+administrativas, melhorar a eficiência e permitir maior foco dos educadores na interação 
+com os alunos. </p>
+<p>Diante desse cenário, este trabalho apresenta o IFBot, um assistente virtual 
+inteligente desenvolvido para facilitar o acesso a dados institucionais de forma 
+automatizada e confiável. O IFBot utiliza a abordagem <i>Retrieval-Augmented 
+Generation </i>(RAG), combinando web <i>scraping </i>e análise de documentos públicos para 
+fornecer respostas automatizadas e contextuais. Essa abordagem é baseada na 
+combinação de recuperação de informações e geração de texto, permitindo que o 
+assistente recupere informações relevantes e as apresente de maneira clara e precisa, 
+conforme proposto por Lewis et al. (2020).</p>
+<p>Além de otimizar o atendimento administrativo, o IFBot promove a inclusão 
+digital e a democratização da informação, garantindo que alunos e servidores obtenham 
+respostas rápidas e precisas sobre processos institucionais. De acordo com Winkler & 
+Söllner (2018), ferramentas baseadas em IA, como o IFBot, têm demonstrado grande 
+potencial para tornar o acesso à informação mais equitativo, especialmente em 
+ambientes educacionais. No âmbito social e sustentável, a solução contribui para a 
+modernização do serviço público, otimizando o tempo e os recursos humanos da 
+instituição, reduzindo a necessidade de papel e proporcionando um modelo de 
+atendimento escalável e eficiente. </p>
+<p>Outro aspecto relevante é o tratamento ético de dados sensíveis. O IFBot foi 
+desenvolvido em conformidade com a Lei Geral de Proteção de Dados (LGPD), 
+garantindo que as informações dos usuários sejam protegidas e que o uso da ferramenta 
+esteja alinhado a práticas responsáveis. O controle de acesso e a anonimização de 
+interações são medidas adotadas para assegurar a privacidade e segurança dos usuários. </p>
+<p>Dessa forma, o IFBot se destaca como uma solução tecnológica inovadora para 
+melhorar a gestão educacional, promovendo inclusão, acessibilidade e sustentabilidade 
+no ambiente acadêmico, enquanto respeita os princípios éticos e legais relacionados ao 
+uso de dados.</p>
+<h3>2. Justificativa </h3>
+<p>A crescente demanda por informações institucionais e a necessidade de otimização dos 
+serviços administrativos tornam essencial a adoção de soluções tecnológicas que 
+aprimorem esses processos. Atualmente, grande parte das dúvidas e solicitações 
+acadêmicas e administrativas exige a consulta manual a documentos institucionais ou a 
+interação direta com setores específicos, o que gera sobrecarga nos atendimentos e 
+dificulta o acesso ágil à informação. Para McAfee & Brynjolfsson (2017), no contexto 
+da transformação digital, tecnologias baseadas em inteligência artificial e plataformas 
+digitais têm o potencial de automatizar processos e reduzir essa sobrecarga. Ferramentas 
+como o IFBot são exemplos práticos desse potencial, proporcionando atendimento ágil e 
+equitativo aos usuários e otimizando o tempo dos servidores (Winkler & Söllner, 2018). </p>
+<p>Diante desse cenário, a implementação do IFBot, um assistente virtual baseado 
+na abordagem RAG, alimentado por web <i>scraping </i>e documentos públicos, se justifica 
+como uma solução inovadora para otimizar o acesso à informação. De acordo com 
+Lewis et al. (2020), a abordagem RAG combina recuperação de informações e geração 
+de texto, permitindo que o IFBot forneça respostas rápidas e confiáveis, garantindo 
+maior acessibilidade e escalabilidade dos serviços.</p>
+<p>Ao automatizar a recuperação de informações institucionais, o IFBot reduz a 
+carga de trabalho dos setores administrativos, permitindo que os profissionais se 
+concentrem em tarefas mais estratégicas. Segundo Zhang, Følstad e Bjørkli (2021), a 
+implementação bem-sucedida de chatbots depende de fatores organizacionais, como 
+gestão de recursos, capacitação da equipe e estabelecimento de métricas de 
+desempenho. Além disso, o uso do IFBot promove inclusão digital, proporcionando 
+uma interface acessível que atende a diferentes perfis de usuários, independentemente 
+de suas habilidades tecnológicas.</p>
+<p>No contexto educacional, o IFBot democratiza o acesso à informação e 
+moderniza a gestão acadêmica, garantindo que alunos e servidores obtenham respostas 
+rápidas e precisas. Outro aspecto fundamental é o compromisso com o tratamento ético 
+de dados sensíveis, em conformidade com a LGPD. O IFBot foi projetado para garantir 
+a privacidade dos usuários, utilizando técnicas de anonimização e controle de acesso, 
+assegurando que o uso da ferramenta esteja alinhado às melhores práticas de segurança 
+e proteção de dados. </p>
+<p>Por fim, o desenvolvimento do IFBot oferece uma oportunidade educacional 
+significativa para os alunos envolvidos no projeto. Ao participarem da criação e 
+implementação de uma solução tecnológica avançada, os alunos são inseridos na 
+vanguarda do mercado de trabalho, adquirindo competências essenciais em inteligência 
+artificial, desenvolvimento de software e ética digital. Dessa forma, o IFBot não apenas 
+atende a uma demanda institucional, mas também capacita alunos e servidores no 
+desenvolvimento de tecnologias emergentes, preparando-os para os desafios da 
+transformação digital.</p>
+<h3>3. Fundamentação Teórica </h3>
+<p>O desenvolvimento de assistentes virtuais baseados em inteligência artificial (IA) tem 
+avançado significativamente nos últimos anos, impulsionado pelo aprimoramento de 
+modelos de Processamento de Linguagem Natural (PLN) e pela introdução de 
+arquiteturas híbridas, como a RAG. Segundo Lewis et al. (2020), a abordagem RAG 
+combina recuperação de informações e geração de texto, permitindo que os assistentes 
+virtuais acessem dados relevantes e os transformem em respostas contextuais. No 
+contexto deste trabalho, o IFBot é um exemplo prático dessa tecnologia, utilizando 
+técnicas de recuperação de informações e geração de linguagem natural para fornecer 
+respostas rápidas, precisas e contextualizadas.</p>
+<p>Além disso, os avanços em modelos de linguagem baseados em redes neurais 
+profundas, como o GPT-3, ampliam significativamente a capacidade de compreensão e 
+interação dos assistentes virtuais (Brown et al., 2020). Esses modelos são capazes de 
+interpretar o contexto, adaptar respostas e fornecer informações com alto nível de 
+precisão, tornando o IFBot uma ferramenta mais eficaz e interativa. </p>
+<p>No contexto educacional e administrativo, a automação proporcionada pelo 
+IFBot está alinhada às tendências globais de transformação digital. De acordo com 
+Russell e Norvig (2020), os algoritmos inteligentes desempenham um papel 
+fundamental na otimização de processos, permitindo que tarefas repetitivas sejam 
+automatizadas, reduzindo a carga de trabalho humano e garantindo acesso ágil e preciso 
+às informações. Ao adotar essa abordagem, o IFBot não apenas melhora a eficiência 
+operacional, mas também promove uma experiência mais acessível e dinâmica para 
+alunos e servidores. </p>
+<p>Adicionalmente, o uso de técnicas de web <i>scraping </i>para extração automática de 
+informações públicas é uma característica essencial do IFBot. Essa abordagem permite 
+que o chatbot mantenha sua base de conhecimento sempre atualizada, garantindo 
+respostas precisas e relevantes. Conforme destacado por Khder (2021), o uso de web 
+<i>scraping</i> deve ser conduzido de forma ética e responsável, garantindo que apenas 
+informações públicas sejam acessadas e que a privacidade dos usuários seja preservada, 
+em conformidade com a LGPD.</p>
+<p>A ética no tratamento de dados é um pilar fundamental do IFBot, que adota 
+práticas de anonimização e controle de acesso para proteger as informações dos 
+usuários. Essas medidas asseguram que o sistema opere de forma segura e transparente, 
+garantindo que o uso da tecnologia esteja alinhado às melhores práticas de segurança da 
+informação. </p>
+<p>Dessa forma, a fundamentação teórica deste projeto se baseia na interseção entre 
+PLN, recuperação de informações, geração de respostas e ética no tratamento de dados. 
+O IFBot se apresenta como uma solução inovadora e escalável, que não apenas otimiza 
+o acesso a dados institucionais, mas também promove uma experiência de usuário 
+segura, eficiente e em conformidade com as melhores práticas de proteção de dados. </p>
+<h3>4. Objetivos </h3>
+<p>O objetivo deste trabalho é descrever o desenvolvimento do IFBot, um assistente virtual 
+inteligente baseado em técnicas de PLN e RAG. O IFBot é projetado para fornecer 
+respostas automatizadas e confiáveis a alunos e servidores de uma instituição de ensino, 
+otimizando o acesso à informação e reduzindo a sobrecarga administrativa. </p>
+<p>Para isso, o trabalho contempla o processo de coleta e estruturação de dados 
+institucionais por meio de técnicas de web <i>scraping</i> e análise de documentos públicos, 
+garantindo que a base de dados utilizada seja confiável e atualizada. A implementação 
+da abordagem RAG permite que o IFBot combine recuperação de informações e 
+geração de respostas contextuais, assegurando precisão e coerência no atendimento aos 
+usuários. Adicionalmente, é desenvolvido um ambiente de interação acessível, 
+permitindo que alunos e servidores utilizem o IFBot de forma intuitiva em múltiplos 
+canais de comunicação, como plataformas web e aplicativos de mensagens. </p>
+<p>Outro aspecto fundamental é o compromisso com a segurança e privacidade dos 
+dados, em conformidade com a LGPD. O IFBot é projetado para garantir que as 
+informações dos usuários sejam protegidas, com medidas de anonimização e controle de 
+acesso.</p>
+<p>Ao apresentar o desenvolvimento do IFBot, este trabalho visa discutir os 
+benefícios esperados da ferramenta, como inclusão digital, democratização da 
+informação e otimização dos serviços administrativos na instituição de ensino.</p>
+<h3>5. Metodologia </h3>
+<p>A metodologia adotada para o desenvolvimento do IFBot segue uma abordagem 
+sistemática, estruturada em etapas que garantem a precisão e eficiência na criação do 
+assistente virtual. O IFBot é projetado para otimizar o acesso a informações 
+institucionais, combinando técnicas de PLN e RAG.</p>
+<h4>5.1. Materiais e Tecnologias </h4>
+<p>A execução do projeto utiliza o uso de diversas ferramentas e tecnologias, incluindo:</p>
+<ul>
+    <li>Linguagens de Programação: Python, que será utilizado para a manipulação de 
+dados, treinamento da IA e desenvolvimento da interface.</li>
+<li>
+    Bibliotecas e Frameworks:  
+    <ul><li><i>Scrapy e BeautifulSoup</i> para web <i>scraping </i>e extração de dados de 
+documentos públicos. </li>
+<li><i>NLTK </i>e <i>spaCy </i>para o Processamento de Linguagem Natural (PLN).</li>
+<li><i>Hugging Face Transformers </i>para implementação do modelo de RAG 
+(<i>Retrieval-Augmented Generation</i>). </li>
+<li><i>FAISS</i> (Facebook AI Similarity Search) para indexação vetorial e 
+recuperação eficiente de informações.</li>
+<li><i>Flask </i>ou <i>FastAPI</i> para criação da API de interação do chatbot.</li>
+</ul>
+<li>Banco de Dados: <i>PostgreSQL</i> ou <i>MongoDB</i> para o armazenamento e 
+recuperação dos documentos processados.</li>
+<li>Plataformas de Comunicação: Web, Telegram e WhatsApp para a interação dos 
+usuários com o chatbot.</li>
+</li>
+
+</ul>
+<h3>5.2. Etapas da Metodologia </h3>
+<p>O desenvolvimento do IFBot será conduzido através de seis etapas principais, conforme 
+descrito a seguir: </p>
+<ol><li>Coleta e Estruturação de Dados </li>
+<ol><p>A primeira etapa envolve a coleta de dados institucionais. A extração de 
+documentos públicos será realizada utilizando técnicas de web scraping, com o 
+auxílio das bibliotecas Scrapy e BeautifulSoup. Além disso, arquivos 
+institucionais serão coletados diretamente de fontes oficiais. Os dados extraídos 
+serão estruturados em formatos padronizados (JSON, CSV) e armazenados em 
+um banco de dados adequado (PostgreSQL ou MongoDB), o que permitirá uma 
+recuperação eficiente posterior. </p></ol></ol>
 </body>
 </html>
